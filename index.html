@@ -1,8 +1,8 @@
 <!-- Unit 3 Project
 Requirements
-[  ] Two External Links
+[ yes ] Two External Links
 [  ] Table (minimum 2 Columns by 3 Rows)
-[  ] Three CSS Rules
+[ yes ] Three CSS Rules
 [  ] Three Images
 
 Select ONE Additional Feature to Add  
@@ -22,8 +22,25 @@ Select ONE Additional Feature to Add
   <style>
     body {
       background-color: rgb(255, 251, 238);
+       font-family: "Short Stack", cursive;
     }
+
+    a {
+      color:rgb(255, 154, 184)
+    }
+
+    ul li::marker {
+  content: " ❤ ";
+  font-size: 1.2em; 
+  color: #f0c8e6;
+}
+
   </style>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Short+Stack&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
@@ -32,11 +49,14 @@ Select ONE Additional Feature to Add
 
   <h2>Contents:</h2>
 
-  <ol>
-    <li><a href="?">Recipe #1</a></li>
-  </ol>
+  <ul>
+    <li><a href="buns">Custard buns</a></li>
+    <li><a href="?">Gnocchi</a></li>
+    <li><a href="?">Banana bread</a></li>
+    <li><a href="?">Sinigang</a></li>
+  </ul>
 
-  <h2 id="?">Recipe #1</h2>
+  <h2 id="buns">Custard buns</h2>
 
   <ul>
     <li>Time: _</li>
@@ -61,7 +81,9 @@ Select ONE Additional Feature to Add
   <p><strong>Step 1:</strong> Do something.
   </p>
 
-  <p><em>Source: <a href="?">Some recipes websites</a></em></p>
+  <p><em> <a href="https://www.youtube.com/watch?v=Ed_0pLggDvM">Original Recipe</a> || <a href="?">Custard Recipe</a></em></p>
+
+<p><em> <a href="https://www.youtube.com/watch?v=-BYPCJNm5uo"> Original Recipe</a> || <a href="?">Sauce Recipe</a></em></p>
 
 </body>
 
