@@ -21,7 +21,7 @@ Select ONE Additional Feature to Add
   <meta charset="utf-8">
   <style>
     body {
-      background-color: rgb(255, 251, 238);
+        background-color: rgb(255, 251, 238);
        font-family: "Short Stack", cursive;
     }
 
@@ -30,10 +30,30 @@ Select ONE Additional Feature to Add
     }
 
     ul li::marker {
-  content: " ❤ ";
-  font-size: 1.2em; 
-  color: #f0c8e6;
-}
+      content: " ❤ ";
+      font-size: 1.2em; 
+      color: #f0c8e6;
+    }
+
+    table, th, td {
+      border: 1px solid rgb(142, 185, 141);
+      border-spacing: 4px;
+      border-radius: 10px; /* Adjust the value for desired roundness */
+      overflow: hidden;
+     }
+
+    body {
+      background-image: url('https://i.pinimg.com/736x/43/48/e3/4348e37fd43b978b906397ecac385c6c.jpg'), url('https://i.pinimg.com/736x/43/48/e3/4348e37fd43b978b906397ecac385c6c.jpg');
+      background-repeat: no-repeat;
+      background-position: left center, right center;
+      width: 40%; 
+      margin: 0 auto; 
+      min-height: 500px;
+    }
+
+  .steps {
+    float:right
+  }
 
   </style>
 
@@ -58,10 +78,8 @@ Select ONE Additional Feature to Add
 
   <h2 id="buns">Custard buns</h2>
 
-  <ul>
-    <li>Time: _</li>
-    <li>Serves: _</li>
-  </ul>
+  <p> Time: 1 hr<br>
+    Serves: 8</p>
 
   <table>
     <thead>
@@ -78,7 +96,7 @@ Select ONE Additional Feature to Add
     </tbody>
   </table>
 
-  <p><strong>Step 1:</strong> Do something.
+  <p class="steps"><strong>Step 1:</strong> Do something.
   </p>
 
   <p><em> <a href="https://www.youtube.com/watch?v=Ed_0pLggDvM">Original Recipe</a> || <a href="?">Custard Recipe</a></em></p>
