@@ -1,16 +1,16 @@
 <!-- Unit 3 Project
 Requirements
 [ yes ] Two External Links
-[  ] Table (minimum 2 Columns by 3 Rows)
+[ yes ] Table (minimum 2 Columns by 3 Rows)
 [ yes ] Three CSS Rules
-[  ] Three Images
+[ yes ] Three Images
 
 Select ONE Additional Feature to Add  
 [ no ] Feature 1 - Include :hover Effect
 [ no ] Feature 2 - Change the Cursor
 [ no ] Feature 3 - Make a Background Color Semi-Transparent
 [ no ] Feature 4 - Include at Flip Card
-[ no ] Feature 5 - Include at least two Internal links
+[ yes ] Feature 5 - Include at least two Internal links
 -->
 
 <!DOCTYPE html>
@@ -22,7 +22,17 @@ Select ONE Additional Feature to Add
   <style>
     body {
         background-color: rgb(255, 251, 238);
+      background-size: 450px 3000px;
        font-family: "Short Stack", cursive;
+    }
+
+    body {
+      background-image: url('https://i.pinimg.com/736x/43/48/e3/4348e37fd43b978b906397ecac385c6c.jpg'), url('https://i.pinimg.com/736x/43/48/e3/4348e37fd43b978b906397ecac385c6c.jpg');
+      background-repeat: no-repeat;
+      background-position: left center, right center;
+      width: 40%; 
+      margin: 0 auto; 
+      min-height: 500px;
     }
 
     a {
@@ -42,14 +52,6 @@ Select ONE Additional Feature to Add
       overflow: hidden;
      }
 
-    body {
-      background-image: url('https://i.pinimg.com/736x/43/48/e3/4348e37fd43b978b906397ecac385c6c.jpg'), url('https://i.pinimg.com/736x/43/48/e3/4348e37fd43b978b906397ecac385c6c.jpg');
-      background-repeat: no-repeat;
-      background-position: left center, right center;
-      width: 40%; 
-      margin: 0 auto; 
-      min-height: 700px;
-    }
 
   .steps {}
 
@@ -63,6 +65,10 @@ Select ONE Additional Feature to Add
 
   img {
     border-radius: 10%
+  }
+
+  .original {
+    text-align: center;
   }
 
   </style>
@@ -80,13 +86,12 @@ Select ONE Additional Feature to Add
   <h2>Contents:</h2>
 
   <ul>
-    <li><a href="buns">Custard buns</a></li>
-    <li><a href="?">Gnocchi</a></li>
-    <li><a href="?">Banana bread</a></li>
-    <li><a href="?">Sinigang</a></li>
+    <li><a href="#custard">Custard</a></li>
+    <li><a href="#bread">Banana Bread</a></li>
+    <li><a href="#poor">Poor Man's Bread</a></li>
   </ul>
 
-  <h2 id="buns">Custard buns</h2>
+  <h2 id="custard">Custard</h2>
 
   <table class="ingredients">
     <thead>
@@ -98,7 +103,7 @@ Select ONE Additional Feature to Add
     <tbody>
       <tr>
         <td>Milk</td>
-        <td>2 cups</td>
+        <td>1 cup</td>
       </tr>
     </tbody>
     <tbody>
@@ -109,65 +114,52 @@ Select ONE Additional Feature to Add
     </tbody>
     <tbody>
       <tr>
-        <td>Milk</td>
-        <td>2 Cups</td>
+        <td>Sugar</td>
+        <td>3 tbsp</td>
       </tr>
     </tbody>
     <tbody>
       <tr>
-        <td>Milk</td>
-        <td>2 Cups</td>
+        <td>Corn starch</td>
+        <td>2½ tbsp</td>
       </tr>
     </tbody>
     <tbody>
       <tr>
-        <td>Milk</td>
-        <td>2 Cups</td>
+        <td>Egg yolks</td>
+        <td>2</td>
       </tr>
     </tbody>
     <tbody>
       <tr>
-        <td>Milk</td>
-        <td>2 Cups</td>
-      </tr>
-    </tbody>
-    <tbody>
-      <tr>
-        <td>Milk</td>
-        <td>2 Cups</td>
-      </tr>
-    </tbody>
-    <tbody>
-      <tr>
-        <td>Milk</td>
-        <td>2 Cups</td>
-      </tr>
-    </tbody>
-    <tbody>
-      <tr>
-        <td>Milk</td>
-        <td>2 Cups</td>
-      </tr>
-    </tbody>
-    <tbody>
-      <tr>
-        <td>Milk</td>
-        <td>2 Cups</td>
+        <td>Vanilla extract</td>
+        <td>1 tsp</td>
       </tr>
     </tbody>
   </table>
 
   <img src="https://i.ytimg.com/vi/Ed_0pLggDvM/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDgz9XSBmph0bZNqfaWph1k6CFFKQ" width="400"> <br>
 
-  <p> Time: 1 hr<br>
+  <p> Time: 15 mins<br>
     Serves: 8</p>
 
-    <p class="steps"><strong>Step 1:</strong> Do something.
+    <p class="steps"><strong>Step 1:</strong> Whisk eggs and sugar in a separate bowl.
   </p>
 
-  <p><em> <a href="https://www.youtube.com/watch?v=Ed_0pLggDvM">Original Recipe</a> || <a href="?">Custard Recipe</a></em></p>
+  <p class="steps"><strong>Step 2:</strong> In a medium sized pot, melt butter and milk over low heat.
+  </p>
 
-  <table>
+  <p class="steps"><strong>Step 3:</strong> Pour milk mixure into egg mixture and add starch. Mix well.
+  </p>
+
+  <p class="steps"><strong>Step 4:</strong> Pour mixture back into pot, add vanilla, and boil over medium heat until thickened. Stir well to prevent burning.
+  </p>
+
+  <p class="original"><em>|| <a href="https://www.youtube.com/watch?v=Ed_0pLggDvM">Original Recipe</a> ||</em></p>
+
+  <h2 id="bread">Banana Bread</h2>
+
+  <table class="ingredients">
     <thead>
       <tr>
         <th>Ingredients</th>
@@ -176,13 +168,131 @@ Select ONE Additional Feature to Add
     </thead>
     <tbody>
       <tr>
-        <td>Ingredient #1</td>
-        <td>Quantity #1</td>
+        <td>Flour</td>
+        <td>2 cups</td>
+      </tr>
+    </tbody>
+    <tbody>
+      <tr>
+        <td>Baking Soda</td>
+        <td>1 tsp</td>
+      </tr>
+    </tbody>
+    <tbody>
+      <tr>
+        <td>Salt</td>
+        <td>1/4 tsp</td>
+      </tr>
+    </tbody>
+    <tbody>
+      <tr>
+        <td>Brown Sugar</td>
+        <td>3/4 cup</td>
+      </tr>
+    </tbody>
+    <tbody>
+      <tr>
+        <td>Butter</td>
+        <td>½ cup</td>
+      </tr>
+    </tbody>
+    <tbody>
+      <tr>
+        <td>Eggs</td>
+        <td>2</td>
+      </tr>
+    </tbody>
+    <tbody>
+      <tr>
+        <td>Ripe bananas</td>
+        <td>6</td>
       </tr>
     </tbody>
   </table>
 
-<p><em> <a href="https://www.youtube.com/watch?v=-BYPCJNm5uo"> Original Recipe</a> || <a href="?">Sauce Recipe</a></em></p>
+ <img src="https://www.marthastewart.com/thmb/irpFSo-hGcKsW9AtP4ke5vJruGE=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/MSL-1511453-vegan-banana-bread-3x2-52f60a63082147059df51459a98bbae6.jpg" width="400"> <br>
+
+<p> Time: 15 mins<br>
+    Serves: 12</p>
+
+<p class="steps"><strong>Step 1:</strong> Preheat oven to 350°F and lightly grease a bread pan.
+  </p>
+
+  <p class="steps"><strong>Step 2:</strong> Comibine dry ingredients into a large bowl. 
+  </p>
+
+  <p class="steps"><strong>Step 3:</strong> In a separate bowl, mix brown sugar and butter until smooth. Stir in eggs and mashed bananas until well combined. Pour wet mixture into dry mixture until combined.
+  </p>
+
+  <p class="steps"><strong>Step 4:</strong> Pour batter into bread pan. Bake in preheated oven for about 60 minutes. Until an inserted toothpick comes out clean.
+  </p>
+
+<p class="original"><em>|| <a href="https://www.allrecipes.com/recipe/20144/banana-banana-bread/"> Original Recipe</a> ||</em></p>
+
+<h2 id="poor">Poor Man's Bread</h2>
+
+<table class="ingredients">
+    <thead>
+      <tr>
+        <th>Ingredients</th>
+        <th>Quantity</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Warm water</td>
+        <td>1½ cups</td>
+      </tr>
+    </tbody>
+    <tbody>
+      <tr>
+        <td>Salt</td>
+        <td>1½ tsp</td>
+      </tr>
+    </tbody>
+    <tbody>
+      <tr>
+        <td>Instant yeast</td>
+        <td>1 tsp</td>
+      </tr>
+    </tbody>
+    <tbody>
+      <tr>
+        <td>Bread flour</td>
+        <td>3 cups</td>
+      </tr>
+    </tbody> <br>
+
+<img src="https://i.ytimg.com/vi/2ZBdhfq6YP4/maxresdefault.jpg" width="400" float="left"> <br>
+
+<p> Time: 15 mins<br>
+    Serves: 12</p>
+
+<p class="steps"><strong>Step 1:</strong> In a warm bowl, pour in water, yeast and salt, and stir to combine.
+  </p>
+
+<p class="steps"><strong>Step 2:</strong> Pour in flour and gently mix using a spoon or spatula. 
+</p>
+
+<p class="steps"><strong>Step 3:</strong> Cover with plastic wrap and let proof for 1 hour and 30 minutes. 
+</p>
+
+<p class="steps"><strong>Step 4:</strong> Lightly grease 2 bread pans. 
+</p>
+
+<p class="steps"><strong>Step 5:</strong> De-gas the dough by mixing, pulling and stretching. Sprinkle extra flour along the top of the dough and scrape sides until dough only lightly sticks
+</p>
+
+<p class="steps"><strong>Step 6:</strong> Pour dough into one bread pan. Using the second bread pan, flip it and place on top of first pan to act as lid. Use binder clips to secure both pans together. 
+</p>
+
+<p class="steps"><strong>Step 7:</strong> Preheat oven to 400°F and set aside dough to proof for an addition of 30 minutes.
+</p>
+
+<p class="steps"><strong>Step 8:</strong> Bake for 35 minutes at 400°F. After completed time, remove top and return to oven for additional 10 minutes. Let cool and serve.
+</p>
+
+<p class="original"><em>|| <a href="https://youtu.be/2ZBdhfq6YP4?si=RnIkehVjmblemnY7"> Original Recipe</a> ||</em></p>
 
 </body>
 
